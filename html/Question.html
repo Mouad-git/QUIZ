@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Art Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+        <header>
+            <h1>The Quiz!</h1>
+            <h2>Application de Quiz avec Timer</h2>
+        </header>
+        <div id="subhead">
+            <p>This is a 10 question quiz about art and artists. Please select the answer that is most likely correct.</p>
+        </div>
+        <div id="timer-box">
+            <p id="timer">Chargement du timer...</p>
+        </div>
+        
+        <ul id="questionsList">
+            <section class="current">
+                <li>
+                    <p>Le meilleur joueur de l'histoire du football ?</p>
+                    <span class="questionItem">
+                        <input id="option1" type="radio" name="one" value="Cristiano Ronaldo"><label for="option1">Cristiano Ronaldo</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="option2" type="radio" name="one" value="Lionel Messi"><label for="option2">Lionel Messi</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="option3" type="radio" name="one" value="Pelé"><label for="option3">Pelé</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="option4" type="radio" name="one" value="Maradona"><label for="option4">Maradona</label>
+                    </span>
+                    <a id="next-question-1" href="#" class="nextButton">Next Question &gt;</a>
+
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>The <em>Mona Lisa</em>, Leonardo da Vinci's magnum opus, draws crowds into which famous European museum?</p>
+                    <span class="questionItem">
+                        <input id="b1" type="radio" name="two" value="vatican"><label for="b1"><em>Musée du Vatican</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="b2" type="radio" name="two" value="prado"><label for="b2"><em>Museo del Prado</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="b3" type="radio" name="two" value="british"><label for="b3"><em>Musée britannique</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="b4" type="radio" name="two" value="louvre"><label for="b4"><em>Le Musée du Louvre, Paris</em></label>
+                    </span>
+                    <a id="next-question-2" href="#" class="nextButton">Next Question &gt;</a>
+
+
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>Quelle est la plus ancienne université encore en activité dans le monde ?</p>
+                    <span class="questionItem">
+                        <input id="c1" type="radio" name="three" value="L'université d'Oxford"><label for="c1">L'université d'Oxford</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="c2" type="radio" name="three" value="L'université Al Quaraouiyine"><label for="c2">L'université Al Quaraouiyine</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="c3" type="radio" name="three" value="L'université de Bologne"><label for="c3">L'université de Bologne</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="c4" type="radio" name="three" value="La Sorbonne"><label for="c4">La Sorbonne</label>
+                    </span>
+                    <a id="next-question-3" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>La Mona Lisa, Magnum Opus de Leonardo da Vinci, attire des foules dans quel célèbre musée européen ?</p>
+                    <span class="questionItem">
+                        <input id="d1" type="radio" name="four" value="Musée du Vatican"><label for="d1">Musée du Vatican</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="d2" type="radio" name="four" value="Museo del Prado"><label for="d2">Museo del Prado</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="d3" type="radio" name="four" value="Musée britannique"><label for="d3">Musée britannique</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="d4" type="radio" name="four" value="Le Musée du Louvre, Paris"><label for="d4">Le Musée du Louvre, Paris</label>
+                    </span>
+                    <a id="next-question-4" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>Qui était le premier président des États-Unis ?</p>
+                    <span class="questionItem">
+                        <input id="e1" type="radio" name="five" value="Abraham Lincoln"><label for="e1">Abraham Lincoln</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="e2" type="radio" name="five" value="George Washington"><label for="e2">George Washington</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="e3" type="radio" name="five" value="Thomas Jefferson"><label for="e3">Thomas Jefferson</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="e4" type="radio" name="five" value="John Adams"><label for="e4">John Adams</label>
+                    </span>
+                    <a id="next-question-5" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>Quel est le magazine qui donne le ballon dor ?</p>
+                    <span class="questionItem">
+                        <input id="f1" type="radio" name="six" value="L'Équipe"><label for="f1">L'Équipe</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="f2" type="radio" name="six" value="France Football"><label for="f2">France Football</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="f3" type="radio" name="six" value="Sports Illustrated"><label for="f3">Sports Illustrated</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="f4" type="radio" name="six" value="Marca"><label for="f4"Marca></label>
+                    </span>
+                    <a id="next-question-6" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>The art critic Louis Leroy coined the term Impressionism from a painting titled <em>Impression, soleil levant</em>. But which artist created it?</p>
+                    <span class="questionItem">
+                        <input id="g1" type="radio" name="seven" value="degas"><label for="g1">Edgar Degas</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="g2" type="radio" name="seven" value="cezanne"><label for="g2">Paul Cezanne</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="g3" type="radio" name="seven" value="matisse"><label for="g3">Henri Matisse</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="g4" type="radio" name="seven" value="monet"><label for="g4">Claude Monet</label>
+                    </span>
+                    <a id="next-question-7" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p><em>The Scream</em>, sold in May for nearly $120m, is currently the world's most expensive painting. But which Norwegian artist created it?</p>
+                    <span class="questionItem">
+                        <input id="h1" type="radio" name="eight" value="dahl"><label for="h1">Hans Dahl</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="h2" type="radio" name="eight" value="munch"><label for="h2">Edvard Munch</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="h3" type="radio" name="eight" value="werenskiold"><label for="h3">Erik Werenskiold</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="h4" type="radio" name="eight" value="gude"><label for="h4">Hans Gude</label>
+                    </span>
+                    <a id="next-question-8" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>In 2011, which artist covered the floor of the Tate Modern's vast Turbine Hall in 100m handmade porcelain sunflower seeds?</p>
+                    <span class="questionItem">
+                        <input id="i1" type="radio" name="nine" value="weiwei"><label for="i1">Ai Weiwei</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="i2" type="radio" name="nine" value="klee"><label for="i2">Paul Klee</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="i3" type="radio" name="nine" value="schendel"><label for="i3">Mira Schendel</label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="i4" type="radio" name="nine" value="choucair"><label for="i4">Saloua Raouda</label>
+                    </span>
+                    <a id="next-question-9" href="#" class="nextButton">Next Question &gt;</a>
+                </li>
+            </section>
+            <section>
+                <li>
+                    <p>The great Italian artist Caravaggio, notorious for brawling, is said to have put his signature to just one of his many paintings. But which one was it?</p>
+                    <span class="questionItem">
+                        <input id="j1" type="radio" name="ten" value="calling"><label for="j1"><em>The Calling of Saint Matthew</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="j2" type="radio" name="ten" value="entombment"><label for="j2"><em>The Entombment of Christ</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="j3" type="radio" name="ten" value="beheading"><label for="j3"><em>The Beheading of Saint John the Baptist</em></label>
+                    </span>
+                    <span class="questionItem">
+                        <input id="j4" type="radio" name="ten" value="martyrdom"><label for="j4"><em>The Martyrdom of Saint Matthew</em></label>
+                    </span>
+                    <a href="#" id="submitAnswers" class="finalButton">Submit Answers</a>
+                </li>
+            </section>
+        </ul>
+        
+</body>
+<!-- partial -->
+<script  src="/js/script.js"></script>
+
+</body>
+</html>

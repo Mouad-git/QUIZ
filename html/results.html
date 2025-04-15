@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Art Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/css/style-resultat.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+        <div id="result-container">
+            <h1>Quiz Results</h1>
+            <p id="score-display">Loading your score...</p>
+        </div>
+                <section class="current">
+                    <li>
+                        <a id="start-link" style="width: 250px; margin-right: 510px;" href="/index.html" class="startButton">Recommencer le Quiz</a>
+                    </li>
+                </section>  
+</body>
+<!-- partial -->
+  <script  src="/js/script.js"></script>
+  <script>
+    // Récupérer le score depuis le LocalStorage
+    const score = localStorage.getItem("quizScore");
+    const totalQuestions = localStorage.getItem("totalQuestions");
+
+    // Afficher le score
+    document.getElementById("score-display").innerHTML = `
+        Vous avez obtenu <strong>${score}</strong> sur <strong>${totalQuestions}</strong>.
+    `;
+</script>
+</body>
+</html>
